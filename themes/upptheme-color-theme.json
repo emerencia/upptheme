@@ -464,13 +464,6 @@
 			}
 		},
 		{
-			"name": "Sections",
-			"scope": "entity.name.section",
-			"settings": {
-				"fontStyle": "bold"
-			}
-		},
-		{
 			"name": "Numbers, Characters",
 			"scope": [
 				"constant.numeric",
@@ -669,13 +662,6 @@
 			}
 		},
 		{
-			"name": "CSS: Important Keyword",
-			"scope": "keyword.other.important",
-			"settings": {
-				"fontStyle": "bold"
-			}
-		},
-		{
 			"name": "Markup: Changed",
 			"scope": "markup.changed",
 			"settings": {
@@ -739,13 +725,6 @@
 			"scope": "markup.heading",
 			"settings": {
 				"foreground": "#AA3731"
-			}
-		},
-		{
-			"name": "Markup: Strong",
-			"scope": "markup.bold",
-			"settings": {
-				"fontStyle": "bold"
 			}
 		},
 		{
