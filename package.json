@@ -1,19 +1,14 @@
 {
   "name": "upptheme",
-  "displayName": "upptheme",
-  "description": "Light color theme",
-  "version": "0.0.1",
+  "displayName": "upptheme light theme",
+  "description": "A fun candy cane colored theme.",
+  "version": "0.0.2",
   "engines": {
     "vscode": "^1.90.0"
   },
   "categories": [
     "Themes"
   ],
-  "publisher": "AndoCorp",
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/emerencia/upptheme"
-  },
   "contributes": {
     "themes": [
       {
@@ -22,5 +17,31 @@
         "path": "./themes/upptheme-color-theme.json"
       }
     ]
-  }
+  },
+  "publisher": "AndoCorp",
+  "author": {
+    "name": "Ando Emerencia"
+  },
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/emerencia/upptheme"
+  },
+  "icon": "images/upptheme.png",
+  "screenshots": [
+    {
+      "path": "images/code.png"
+    }
+  ],
+  "galleryBanner": {
+    "color": "#2b475d",
+    "theme": "light"
+  },
+  "keywords": [
+    "theme",
+    "upptheme",
+    "light theme",
+    "vscode theme",
+    "vscode light theme"
+  ]
 }
