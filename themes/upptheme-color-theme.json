@@ -131,7 +131,6 @@
 				"foreground": "#a8a800"
 			}
 		},
-		
 		{
 			"name": "Constants",
 			"scope": [
