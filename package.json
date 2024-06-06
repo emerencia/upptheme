@@ -2,7 +2,7 @@
   "name": "upptheme",
   "displayName": "upptheme light theme",
   "description": "A fun candy cane colored theme.",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "engines": {
     "vscode": "^1.90.0"
   },
@@ -34,7 +34,7 @@
     }
   ],
   "galleryBanner": {
-    "color": "#2b475d",
+    "color": "#eff7fe",
     "theme": "light"
   },
   "keywords": [
