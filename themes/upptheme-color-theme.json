@@ -88,6 +88,11 @@
 			"name": "Object properties",
 			"scope": [
 				"variable.object.property",
+				"variable.other.object.property",
+				"variable.other.property",
+				"support.variable.property",
+				"meta.object-literal.key",
+				"constant.other.symbol.hashkey"
 			],
 			"settings": {
 				"foreground": "#8000ff"
@@ -103,12 +108,32 @@
 			}
 		},
 		{
+			"name": "Variable use",
+			"scope": [
+				"variable.other.object",
+				"variable.other.readwrite",
+			],
+			"settings": {
+				"foreground": "#c37522"
+			}
+		},
+		{
+			"name": "Instance variables",
+			"scope": [
+				"variable.other.object.instance",
+				"variable.other.readwrite.instance",
+			],
+			"settings": {
+				"foreground": "#a8a800"
+			}
+		},
+		{
 			"name": "Variables",
 			"scope": [
 				"variable.other.constant",
 			],
 			"settings": {
-				"foreground": "#b30000"
+				"foreground": "#48a0ff"
 			}
 		},
 		{
@@ -118,16 +143,17 @@
 				"support.function"
 			],
 			"settings": {
-				"foreground": "#80b000"
+				"foreground": "#ff9122"
 			}
 		},
 		{
 			"name": "Function calls",
 			"scope": [
+				"meta.function-call entity.name.function",
 				"meta.function-call"
 			],
 			"settings": {
-				"foreground": "#ff9122"
+				"foreground": "#80b000"
 			}
 		},
 		{
@@ -135,6 +161,7 @@
 			"scope": [
 				"entity.name.type",
 				"entity.other.inherited-class",
+				"support.class"
 			],
 			"settings": {
 				"foreground": "#0080c0"
@@ -168,7 +195,8 @@
 		{
 			"name": "Parameters",
 			"scope": [
-				"variable.parameter"
+				"variable.parameter",
+				"variable.other.block"
 			],
 			"settings": {
 				"foreground": "#c37522"
@@ -208,7 +236,7 @@
 			"name": "Strings: Symbols",
 			"scope": "constant.other.symbol",
 			"settings": {
-				"foreground": "#ab6526"
+				"foreground": "#0080c0"
 			}
 		},
 		{
@@ -219,10 +247,41 @@
 			}
 		},
 		{
-			"name": "Punctuation Block",
-			"scope": "punctuation.definition.block",
+			"name": "Punctuation template",
+			"scope": "punctuation.definition.template-expression",
 			"settings": {
 				"foreground": "#bb77ff"
+			}
+		},
+		{
+			"name": "Punctuation Block",
+			"scope": [
+				"punctuation.definition.block",
+				"punctuation.section.scope"
+			],
+			"settings": {
+				"foreground": "#bb77ff"
+			}
+		},
+		{
+			"name": "Brackets",
+			"scope": "meta.brace.square",
+			"settings": {
+				"foreground": "#db6262"
+			}
+		},
+		{
+			"name": "Import Components",
+			"scope": "meta.import variable.other.readwrite.alias",
+			"settings": {
+				"foreground": "#ff00ff"
+			}
+		},
+		{
+			"name": "Import Function Components",
+			"scope": "meta.import meta.block variable.other.readwrite.alias",
+			"settings": {
+				"foreground": "#ff9122"
 			}
 		},
 		{
@@ -252,7 +311,10 @@
 		},
 		{
 			"name": "HTML: Tag Names",
-			"scope": "entity.name.tag",
+			"scope": [
+				"entity.name.tag",
+				"support.class.component"
+			],
 			"settings": {
 				"foreground": "#ff00ff"
 			}
