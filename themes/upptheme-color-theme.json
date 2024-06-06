@@ -10,7 +10,7 @@
 		//"list.activeSelectionIconForeground": "#fff",
 		// colors from other theme
 		"activityBar.background": "#f0f0f0",
-		"activityBar.dropBackground": "#cc6600",
+		//"activityBar.dropBackground": "#cc6600",
 		"activityBar.foreground": "#303030",
 		"activityBarBadge.background": "#e8e8e8",//"#009900",
 		"activityBarBadge.foreground": "#303030",
