@@ -51,7 +51,8 @@
 			"name": "Operators",
 			"scope": [
 				"keyword.operator",
-				"punctuation.definition.typeparameters"
+				"punctuation.definition.typeparameters",
+				"storage.type.function.arrow",
 			],
 			"settings": {
 				"foreground": "#00a0a0"
