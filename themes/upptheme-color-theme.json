@@ -49,7 +49,10 @@
 		},
 		{
 			"name": "Operators",
-			"scope": "keyword.operator",
+			"scope": [
+				"keyword.operator",
+				"punctuation.definition.typeparameters"
+			],
 			"settings": {
 				"foreground": "#00a0a0"
 			}
@@ -121,6 +124,7 @@
 			"name": "Instance variables",
 			"scope": [
 				"variable.other.object.instance",
+				"variable.other.readwrite.instance punctuation.definition.variable",
 				"variable.other.readwrite.instance",
 			],
 			"settings": {
@@ -128,12 +132,21 @@
 			}
 		},
 		{
-			"name": "Variables",
+			"name": "Constants",
 			"scope": [
 				"variable.other.constant",
 			],
 			"settings": {
 				"foreground": "#48a0ff"
+			}
+		},
+		{
+			"name": "Constant definition",
+			"scope": [
+				"meta.definition.variable variable.other.constant",
+			],
+			"settings": {
+				"foreground": "#b30000"
 			}
 		},
 		{
@@ -213,7 +226,10 @@
 		},
 		{
 			"name": "Strings",
-			"scope": "string",
+			"scope": [
+				"string",
+				"punctuation.definition.string"
+			],
 			"settings": {
 				"foreground": "#008000"
 			}
@@ -254,18 +270,22 @@
 			}
 		},
 		{
-			"name": "Punctuation Block",
+			"name": "Braces {}",
 			"scope": [
 				"punctuation.definition.block",
-				"punctuation.section.scope"
+				"punctuation.section.scope",
+				"punctuation.section.embedded"
 			],
 			"settings": {
 				"foreground": "#bb77ff"
 			}
 		},
 		{
-			"name": "Brackets",
-			"scope": "meta.brace.square",
+			"name": "Brackets []",
+			"scope": [
+				"meta.brace.square",
+				"punctuation.section.array",
+			],
 			"settings": {
 				"foreground": "#db6262"
 			}
