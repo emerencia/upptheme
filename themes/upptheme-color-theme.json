@@ -5,9 +5,9 @@
 		"editor.foreground": "#000000",
 		"editorLineNumber.foreground": "#aca899",
         "editor.selectionBackground": "#e4e4ff",
-        "editor.selectionHighlightBackground": "#ffe4ff",
-        "editor.wordHighlightBackground": "#ffe4ff",
-        "editor.wordHighlightStrongBackground": "#ffe4ff",
+        "editor.selectionHighlightBackground": "#ffe4ffcc",
+        "editor.wordHighlightBackground": "#ffe4ffcc",
+        "editor.wordHighlightStrongBackground": "#ffe4ffcc",
         "list.activeSelectionIconForeground": "#fff"
 	},
 	"tokenColors": [
@@ -18,7 +18,6 @@
 				"punctuation.definition.comment"
 			],
 			"settings": {
-				"fontStyle": "italic",
 				"foreground": "#808080"
 			}
 		},
@@ -44,21 +43,22 @@
 			"name": "Invalid - Illegal",
 			"scope": "invalid.illegal",
 			"settings": {
-				"foreground": "#660000"
+				"foreground": "#ff0000",
+				"fontStyle": "underline"
 			}
 		},
 		{
 			"name": "Operators",
 			"scope": "keyword.operator",
 			"settings": {
-				"foreground": "#a0a0a0"
+				"foreground": "#00a0a0"
 			}
 		},
 		{
 			"name": "Keywords",
 			"scope": [
 				"keyword",
-				"storage"
+				"storage",
 			],
 			"settings": {
 				"foreground": "#0000ff"
@@ -71,28 +71,44 @@
 				"support.type"
 			],
 			"settings": {
-				"foreground": "#8000ff"
+				"foreground": "#0000ff"
 			}
 		},
 		{
 			"name": "Language Constants",
 			"scope": [
 				"constant.language",
-				"support.constant",
-				"variable.language"
+				"support.constant"
 			],
 			"settings": {
-				"foreground": "#48a0ff"
+				"foreground": "#0000ff"
+			}
+		},
+		{
+			"name": "Object properties",
+			"scope": [
+				"variable.object.property",
+			],
+			"settings": {
+				"foreground": "#8000ff"
+			}
+		},
+		{
+			"name": "Meta member",
+			"scope": [
+				"meta.object.member",
+			],
+			"settings": {
+				"foreground": "#c37522"
 			}
 		},
 		{
 			"name": "Variables",
 			"scope": [
-				"variable",
-				"support.variable"
+				"variable.other.constant",
 			],
 			"settings": {
-				"foreground": "#48a0ff"
+				"foreground": "#b30000"
 			}
 		},
 		{
@@ -102,7 +118,15 @@
 				"support.function"
 			],
 			"settings": {
-				"fontStyle": "bold",
+				"foreground": "#80b000"
+			}
+		},
+		{
+			"name": "Function calls",
+			"scope": [
+				"meta.function-call"
+			],
+			"settings": {
 				"foreground": "#ff9122"
 			}
 		},
@@ -111,11 +135,9 @@
 			"scope": [
 				"entity.name.type",
 				"entity.other.inherited-class",
-				"support.class"
 			],
 			"settings": {
-				"fontStyle": "bold",
-				"foreground": "#7A3E9D"
+				"foreground": "#0080c0"
 			}
 		},
 		{
@@ -141,6 +163,24 @@
 			],
 			"settings": {
 				"foreground": "#ff0000"
+			}
+		},
+		{
+			"name": "Parameters",
+			"scope": [
+				"variable.parameter"
+			],
+			"settings": {
+				"foreground": "#c37522"
+			}
+		},
+		{
+			"name": "Braces",
+			"scope": [
+				"meta.brace.round"
+			],
+			"settings": {
+				"foreground": "#ff80ff"
 			}
 		},
 		{
@@ -175,6 +215,13 @@
 			"name": "Punctuation",
 			"scope": "punctuation",
 			"settings": {
+				"foreground": "#ff00ff"
+			}
+		},
+		{
+			"name": "Punctuation Block",
+			"scope": "punctuation.definition.block",
+			"settings": {
 				"foreground": "#bb77ff"
 			}
 		},
@@ -193,13 +240,14 @@
 		{
 			"name": "HTML: Tags",
 			"scope": [
+				"punctuation.definition.tag",
 				"meta.tag",
 				"punctuation.definition.tag.html",
 				"punctuation.definition.tag.begin.html",
 				"punctuation.definition.tag.end.html"
 			],
 			"settings": {
-				"foreground": "#804040"
+				"foreground": "#000000"
 			}
 		},
 		{
@@ -216,8 +264,7 @@
 				"entity.other.attribute-name.html"
 			],
 			"settings": {
-				"fontStyle": "italic",
-				"foreground": "#91B3E0"
+				"foreground": "#8000ff"
 			}
 		},
 		{
@@ -315,9 +362,7 @@
 		{
 			"name": "Markup: Output",
 			"scope": [
-				"markup
-
-.output",
+				"markup.output",
 				"markup.raw"
 			],
 			"settings": {
@@ -448,7 +493,7 @@
 			"name": "CSS: Ident",
 			"scope": "entity.name.tag",
 			"settings": {
-				"foreground": "#48a0ff"
+				"foreground": "#ff00ff"
 			}
 		},
 		{
@@ -459,26 +504,10 @@
 			}
 		},
 		{
-			"name": "Breakpoints",
-			"scope": "breakpoint",
-			"settings": {
-				"background": "#ffc8c8"
-			}
-		},
-		{
 			"name": "Console Yellow Output",
 			"scope": "console.yellow",
 			"settings": {
 				"foreground": "#cdcd00"
-			}
-		},
-		{
-			"name": "Errors Attributes",
-			"scope": "error",
-			"settings": {
-				"foreground": "#ff0000",
-				"background": "#fff100",
-				"fontStyle": "underline"
 			}
 		},
 		{
