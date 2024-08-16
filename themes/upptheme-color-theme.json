@@ -371,7 +371,8 @@
 				"variable.other.property",
 				"support.variable.property",
 				"meta.object-literal.key",
-				"constant.other.symbol.hashkey"
+				"constant.other.symbol.hashkey",
+				"support.type.property-name",
 			],
 			"settings": {
 				"foreground": "#8000ff"
@@ -391,6 +392,7 @@
 			"scope": [
 				"variable.other.object",
 				"variable.other.readwrite",
+				"variable.other.value",
 			],
 			"settings": {
 				"foreground": "#c37522"
@@ -411,6 +413,7 @@
 			"name": "Constants",
 			"scope": [
 				"variable.other.constant",
+				"entity.other.attribute-name.pseudo-class",
 			],
 			"settings": {
 				"foreground": "#48a0ff"
@@ -420,6 +423,7 @@
 			"name": "Constant definition",
 			"scope": [
 				"meta.definition.variable variable.other.constant",
+				"variable.other.name"
 			],
 			"settings": {
 				"foreground": "#b30000"
@@ -439,7 +443,8 @@
 			"name": "Function calls",
 			"scope": [
 				"meta.function-call entity.name.function",
-				"meta.function-call"
+				"meta.function-call",
+				"entity.other.attribute-selector",
 			],
 			"settings": {
 				"foreground": "#80b000"
@@ -450,7 +455,8 @@
 			"scope": [
 				"entity.name.type",
 				"entity.other.inherited-class",
-				"support.class"
+				"support.class",
+				"entity.other.attribute-name.class",
 			],
 			"settings": {
 				"foreground": "#0080c0"
@@ -478,7 +484,8 @@
 			"name": "Parameters",
 			"scope": [
 				"variable.parameter",
-				"variable.other.block"
+				"variable.other.block",
+				"variable.other.root",
 			],
 			"settings": {
 				"foreground": "#c37522"
@@ -634,7 +641,6 @@
 				"meta.selector",
 				"meta.selector entity",
 				"meta.selector entity punctuation",
-				"entity.name.tag.css"
 			],
 			"settings": {
 				"foreground": "#7A3E9D"
@@ -644,7 +650,6 @@
 			"name": "CSS: Property Names",
 			"scope": [
 				"meta.property-name",
-				"support.type.property-name"
 			],
 			"settings": {
 				"foreground": "#AB6526"
